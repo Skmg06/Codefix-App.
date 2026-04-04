@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from 'react';
+import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 
 // Metadata removed because this is a client component
@@ -67,6 +68,7 @@ export default function RootLayout({
           <div className="credit-title">GUIDED BY</div>
           <div className="credit-name">DR. UTTAM WAGHMODE</div>
         </div>
+        <Analytics />
       </body>
     </html>
   );
