@@ -10,20 +10,41 @@ interface ErrorListItem {
 
 export default function LibraryPage() {
     const [allErrors, setAllErrors] = useState<ErrorListItem[]>([]);
+    const [loading, setLoading] = useState(true);
+    const [errorMsg, setErrorMsg] = useState<string | null>(null);
     const router = useRouter();
 
-    useEffect(() => {
+    const fetchErrors = () => {
+        setLoading(true);
+        setErrorMsg(null);
         fetch('/api/all-errors')
-            .then(res => res.json())
-            .then(data => {
-                if (Array.isArray(data)) setAllErrors(data);
+            .then(res => {
+                if (!res.ok) {
+                    throw new Error(`Server returned status ${res.status}`);
+                }
+                return res.json();
             })
-            .catch(err => console.error("Could not fetch error list", err));
+            .then(data => {
+                if (Array.isArray(data)) {
+                    setAllErrors(data);
+                } else if (data.error) {
+                    setErrorMsg(data.message || data.error);
+                }
+            })
+            .catch(err => {
+                console.error("Could not fetch error list", err);
+                setErrorMsg(err.message || "Failed to load errors");
+            })
+            .finally(() => {
+                setLoading(false);
+            });
+    };
+
+    useEffect(() => {
+        fetchErrors();
     }, []);
 
     const handleSelectError = (errorQuery: string) => {
-        // Navigate back to home and pass query via URL params or just let them use it.
-        // Easiest is to save it to localStorage or pass as URL param, but we'll use URL params.
         router.push(`/?q=${encodeURIComponent(errorQuery)}`);
     };
 
@@ -41,8 +62,13 @@ export default function LibraryPage() {
             <div className="solution-card">
                 <h3 style={{ marginBottom: '1rem' }}>Click any error to solve it instantly:</h3>
 
-                {allErrors.length === 0 ? (
+                {loading ? (
                     <div className="loader"></div>
+                ) : errorMsg && allErrors.length === 0 ? (
+                    <div className="text-center" style={{ padding: '2rem' }}>
+                        <p style={{ color: 'var(--text-primary)', marginBottom: '1rem' }}>⚠️ Unable to load error library: {errorMsg}</p>
+                        <button className="nav-btn" onClick={fetchErrors}>Retry</button>
+                    </div>
                 ) : (
                     <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
                         {allErrors.map((err) => (
