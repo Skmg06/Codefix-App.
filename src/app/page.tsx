@@ -133,12 +133,12 @@ function HomeContent() {
             )}
           </div>
 
-          {(result.youtubeCode || result.errorQuery) && (
+          {result.youtubeCode && (
             <>
               <h3 className="card-title mt-4">📺 Video Tutorial:</h3>
               <div className="video-container mb-4">
                 <iframe
-                  src={result.youtubeCode ? `https://www.youtube.com/embed/${result.youtubeCode}` : `https://www.youtube.com/embed?listType=search&list=${encodeURIComponent('python ' + result.errorQuery + ' solution')}`}
+                  src={`https://www.youtube.com/embed/${result.youtubeCode}`}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>

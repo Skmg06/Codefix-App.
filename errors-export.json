@@ -6,7 +6,7 @@
     "howToAvoid": "Always check your pairs! If you open a `(`, make sure there's a matching `)` before running the code.",
     "solutionSteps": "1. Look at the line number mentioned in the error.\n2. Check the line right above it, you might have left an open parenthesis or string quote.\n3. Add the missing closing character and save.",
     "command": null,
-    "youtubeCode": "7jR_pXqP34U",
+    "youtubeCode": "k9TUPpGqYTo",
     "createdAt": 1773149765669
   },
   {
@@ -16,7 +16,7 @@
     "howToAvoid": "Whenever you type a `:` at the end of a line, the next line must be indented (usually by pressing Tab or 4 spaces).",
     "solutionSteps": "1. Find the statement ending with `:` that is right before the error line.\n2. Ensure the next line is indented.\n3. Don't mix tabs and spaces!",
     "command": null,
-    "youtubeCode": "zpwqA8YgD18",
+    "youtubeCode": "k9TUPpGqYTo",
     "createdAt": 1773149765682
   },
   {
@@ -26,7 +26,7 @@
     "howToAvoid": "Double-check your spelling. Make sure you declare/assign a value to variables before using them.",
     "solutionSteps": "1. Find the exact name that the error points to.\n2. Did you misspell it? (e.g., `Count` vs `count`). Python is case-sensitive.\n3. Did you forget to define it earlier?",
     "command": null,
-    "youtubeCode": "M9tInb6TKhA",
+    "youtubeCode": "N5vscPTWKOk",
     "createdAt": 1773149765691
   },
   {
@@ -36,7 +36,7 @@
     "howToAvoid": "Before adding a number to a string, convert the number into a string using the `str()` function, or use f-strings.",
     "solutionSteps": "1. Find where you are using `+`.\n2. Wrap the number variable with `str()`. For example: `\"Age: \" + str(age)`.\n3. Alternatively, use an f-string: `f\"Age: {age}\"`.",
     "command": null,
-    "youtubeCode": "pXW03f5tKKE",
+    "youtubeCode": "k9TUPpGqYTo",
     "createdAt": 1773149765696
   },
   {
@@ -56,7 +56,7 @@
     "howToAvoid": "Use an IDE with syntax highlighting to catch these before you run the code.",
     "solutionSteps": "1. Check the line with the `^` pointing to the error.\n2. Ensure all keywords are spelled correctly (e.g., `def`, `while`, `True`).\n3. Check if you missed a colon `:` at the end of an `if` or `for` statement.",
     "command": null,
-    "youtubeCode": "S1Wp6cT4kGg",
+    "youtubeCode": "k9TUPpGqYTo",
     "createdAt": 1773155555310
   },
   {
@@ -66,7 +66,7 @@
     "howToAvoid": "Keep code at the same level of logical execution aligned perfectly vertically.",
     "solutionSteps": "1. Look at the line causing the error.\n2. Delete the extra spaces at the start of the line so it aligns with the line above it.",
     "command": null,
-    "youtubeCode": "zpwqA8YgD18",
+    "youtubeCode": "k9TUPpGqYTo",
     "createdAt": 1773155555320
   },
   {
@@ -76,7 +76,7 @@
     "howToAvoid": "Configure your code editor to 'Insert Spaces' when hitting the Tab key.",
     "solutionSteps": "1. Select all your code.\n2. Use your editor's 'Convert Indentation to Spaces' feature.\n3. Retype the indents on the failing lines using only spaces.",
     "command": null,
-    "youtubeCode": "zpwqA8YgD18",
+    "youtubeCode": "k9TUPpGqYTo",
     "createdAt": 1773155555327
   },
   {
@@ -86,7 +86,7 @@
     "howToAvoid": "If you meant to use a global variable, declare it as global inside the function.",
     "solutionSteps": "1. If the variable is defined outside the function, add `global your_variable_name` inside the function before using it.\n2. Otherwise, make sure you assign the variable a value locally before checking or modifying it.",
     "command": null,
-    "youtubeCode": "5q_QW0q1zUo",
+    "youtubeCode": "N5vscPTWKOk",
     "createdAt": 1773155555337
   },
   {
@@ -96,7 +96,7 @@
     "howToAvoid": "Make sure you are doing math with two numbers, or concatenation with two strings.",
     "solutionSteps": "1. If you want math, convert the string to an integer: `num + int(text_num)`.\n2. If you want text, convert the integer to a string: `str(num) + text`.",
     "command": null,
-    "youtubeCode": "pXW03f5tKKE",
+    "youtubeCode": "HGOBQPFzWKo",
     "createdAt": 1773155555348
   },
   {
@@ -116,7 +116,7 @@
     "howToAvoid": "Make sure the variable you are looping over (e.g. in a `for` loop) is a list, string, dictionary, or uses the `range()` function.",
     "solutionSteps": "1. If you want to loop a specific number of times, use `for i in range(your_number):`.\n2. Do NOT use `for i in your_number:` if `your_number` is an integer.",
     "command": null,
-    "youtubeCode": "k9TUPpGqYTo",
+    "youtubeCode": "6iF8Xb7Z3wQ",
     "createdAt": 1773155555359
   },
   {
@@ -136,7 +136,7 @@
     "howToAvoid": "Only use `int()` on strings that contain whole numbers (like \"42\"). Use `float()` if it has decimals.",
     "solutionSteps": "1. Print the string before trying to convert it to see what it actually is.\n2. If it's a decimal like '3.14', use `float(your_var)` instead.\n3. If it contains text, you need to strip the text out first.",
     "command": null,
-    "youtubeCode": "k9TUPpGqYTo",
+    "youtubeCode": "HGOBQPFzWKo",
     "createdAt": 1773155555370
   },
   {
@@ -146,7 +146,7 @@
     "howToAvoid": "Remember that lists start counting at 0. So the last item is at index `len(my_list) - 1`.",
     "solutionSteps": "1. Check the length of your list using `len(your_list)`.\n2. Make sure the number inside the brackets is strictly less than the length.\n3. If iterating, check your loop conditions.",
     "command": null,
-    "youtubeCode": "1Ea0r5MrtkI",
+    "youtubeCode": "W8KRzm-HUcc",
     "createdAt": 1773155555379
   },
   {
@@ -156,7 +156,7 @@
     "howToAvoid": "Like lists, strings are 0-indexed. Check the string length before accessing specific indices.",
     "solutionSteps": "1. Check the length of the string with `len()`.\n2. Ensure the character index you want is between 0 and `length - 1`.",
     "command": null,
-    "youtubeCode": "1Ea0r5MrtkI",
+    "youtubeCode": "k9TUPpGqYTo",
     "createdAt": 1773155555385
   },
   {
@@ -176,7 +176,7 @@
     "howToAvoid": "Ensure the file name perfectly matches (including extensions like .txt or .csv) and verify the folder path.",
     "solutionSteps": "1. Check your spelling of the file name.\n2. Put the file in the exact same folder as your `.py` script, or provide the full absolute path to the file (e.g., `C:/Folder/file.txt`).",
     "command": null,
-    "youtubeCode": "uhvq8jEuQcw",
+    "youtubeCode": "ZDa-Z5JzLYM",
     "createdAt": 1773155555397
   },
   {
@@ -186,7 +186,7 @@
     "howToAvoid": "Make sure external libraries are installed using `pip install` before you try to import them.",
     "solutionSteps": "1. Open your terminal/command prompt.\n2. Type `pip install modulo_name` (replace module_name with the one crashing).\n3. Rerun your script.",
     "command": null,
-    "youtubeCode": "1Ea0r5MrtkI",
+    "youtubeCode": "C-gEQdGVXbk",
     "createdAt": 1773155555402
   },
   {
@@ -196,7 +196,7 @@
     "howToAvoid": "Check the documentation for the module to ensure the function name hasn't changed in newer versions.",
     "solutionSteps": "1. Check your spelling of the imported function.\n2. Avoid naming your own python files the same as standard libraries (e.g., don't name your file `math.py`).",
     "command": null,
-    "youtubeCode": "1Ea0r5MrtkI",
+    "youtubeCode": "C-gEQdGVXbk",
     "createdAt": 1773155555409
   },
   {
@@ -206,7 +206,7 @@
     "howToAvoid": "Add an `if your_variable is not None:` check before interacting with the variable.",
     "solutionSteps": "1. Find where the variable was supposed to be assigned a value.\n2. Print the variable right before the crash-line to confirm it is `None`.\n3. Fix the function that was supposed to generate the object.",
     "command": null,
-    "youtubeCode": "i0z_2hEDMIM",
+    "youtubeCode": "N5vscPTWKOk",
     "createdAt": 1773155555415
   },
   {
@@ -216,7 +216,7 @@
     "howToAvoid": "Never name your own files names like `math.py`, `random.py`, or `turtle.py`.",
     "solutionSteps": "1. Verify you spelled the function name right (e.g., `math.sqrt`, not `math.sqr`).\n2. Look at your folder. Did you name your own script the same as the module? Rename it and delete the corresponding `.pyc` file.",
     "command": null,
-    "youtubeCode": "i0z_2hEDMIM",
+    "youtubeCode": "C-gEQdGVXbk",
     "createdAt": 1773155555421
   },
   {
@@ -226,7 +226,7 @@
     "howToAvoid": "Know what type of data your variable is holding at any given time.",
     "solutionSteps": "1. `print(type(your_variable))` before the error line.\n2. Ensure it is actually the data type you think it is.",
     "command": null,
-    "youtubeCode": "i0z_2hEDMIM",
+    "youtubeCode": "W8KRzm-HUcc",
     "createdAt": 1773155555427
   },
   {
@@ -236,7 +236,7 @@
     "howToAvoid": "Before performing division, check if the denominator variable equals 0.",
     "solutionSteps": "1. Add a check: `if denominator != 0:` to wrap your division math.\n2. Print out the variables used in the division to see why the bottom one became 0.",
     "command": null,
-    "youtubeCode": "1Ea0r5MrtkI",
+    "youtubeCode": "HGOBQPFzWKo",
     "createdAt": 1773155555433
   },
   {
@@ -246,7 +246,7 @@
     "howToAvoid": "Always write your 'Base Case' (an `if` statement that returns without calling the function again) FIRST when writing recursive functions.",
     "solutionSteps": "1. Look at your recursive function.\n2. Make sure the inputs are actively approaching the base condition with each call.\n3. Make sure the base case `return` works.",
     "command": null,
-    "youtubeCode": "1Ea0r5MrtkI",
+    "youtubeCode": "6iF8Xb7Z3wQ",
     "createdAt": 1773155555439
   },
   {
@@ -256,7 +256,7 @@
     "howToAvoid": "Process files in chunks instead of all at once. Be careful with infinite `while` loops.",
     "solutionSteps": "1. Are you appending to a list inside an infinite loop? Fix the loop condition.\n2. If reading a giant file, iterate line-by-line using `for line in file:` instead of `file.read()`.",
     "command": null,
-    "youtubeCode": "k9TUPpGqYTo",
+    "youtubeCode": "N5vscPTWKOk",
     "createdAt": 1773155555445
   },
   {
@@ -266,7 +266,7 @@
     "howToAvoid": "If this happens unexpectedly, check if your script is hanging in an infinite loop, causing you to have to manually kill it.",
     "solutionSteps": "1. No code fix needed if it was intentional.\n2. If you were trapped in an infinite `while` loop, you need to change the loop condition so it eventually turns `False`.",
     "command": null,
-    "youtubeCode": "k9TUPpGqYTo",
+    "youtubeCode": "N5vscPTWKOk",
     "createdAt": 1773155555451
   },
   {
@@ -276,7 +276,7 @@
     "howToAvoid": "Asserts are used for testing. Make sure your function actually outputs the data you are asserting it should.",
     "solutionSteps": "1. Look at the variable being asserted.\n2. Print its actual value directly above the assert so you can see why the test failed.",
     "command": null,
-    "youtubeCode": "k9TUPpGqYTo",
+    "youtubeCode": "N5vscPTWKOk",
     "createdAt": 1773155555456
   },
   {
@@ -286,7 +286,7 @@
     "howToAvoid": "If you inherit from an abstract class or interface, you must write the code for all of its required methods.",
     "solutionSteps": "1. Go to the class you created.\n2. Make sure you define the method that the error is complaining about.",
     "command": null,
-    "youtubeCode": "1Ea0r5MrtkI",
+    "youtubeCode": "N5vscPTWKOk",
     "createdAt": 1773155555462
   },
   {
@@ -306,7 +306,7 @@
     "howToAvoid": "Build a new string entirely.",
     "solutionSteps": "1. Use slicing or string replacement.\n2. `new_str = 'H' + old_str[1:]`",
     "command": null,
-    "youtubeCode": "pXW03f5tKKE",
+    "youtubeCode": "k9TUPpGqYTo",
     "createdAt": 1773155555472
   },
   {
@@ -316,7 +316,7 @@
     "howToAvoid": "Provide the input text when running the file, or wrap input in try/except.",
     "solutionSteps": "Wrap `input()` in a try/except block catching EOFError.",
     "command": null,
-    "youtubeCode": "7jR_pXqP34U",
+    "youtubeCode": "ZDa-Z5JzLYM",
     "createdAt": 1773155555479
   },
   {
@@ -326,7 +326,7 @@
     "howToAvoid": "Use `for` loops which handle this automatically.",
     "solutionSteps": "If calling `next()`, provide a default value: `next(iterator, None)`.",
     "command": null,
-    "youtubeCode": "1Ea0r5MrtkI",
+    "youtubeCode": "6iF8Xb7Z3wQ",
     "createdAt": 1773155555484
   },
   {
@@ -346,7 +346,7 @@
     "howToAvoid": "Ensure the number of variables exactly matches the length of the list.",
     "solutionSteps": "Count variables on left. Count items on right. Make them match. OR use `*` operator: `a, *rest = [1, 2, 3]`.",
     "command": null,
-    "youtubeCode": "k9TUPpGqYTo",
+    "youtubeCode": "W8KRzm-HUcc",
     "createdAt": 1773155555494
   },
   {
@@ -356,7 +356,7 @@
     "howToAvoid": "Check the size of returned tuples from functions.",
     "solutionSteps": "Make sure you aren't expecting 3 variables when the list only gives you 2.",
     "command": null,
-    "youtubeCode": "k9TUPpGqYTo",
+    "youtubeCode": "W8KRzm-HUcc",
     "createdAt": 1773155555499
   },
   {
@@ -366,7 +366,7 @@
     "howToAvoid": "Look at the `def function_name(arg1, arg2):` definition to see what it requires.",
     "solutionSteps": "1. Look at the function signature.\n2. Pass in the missing argument inside the parentheses when you call it.",
     "command": null,
-    "youtubeCode": "pXW03f5tKKE",
+    "youtubeCode": "N5vscPTWKOk",
     "createdAt": 1773155555505
   },
   {
@@ -376,7 +376,7 @@
     "howToAvoid": "Update the function definition to accept more arguments, or pass fewer.",
     "solutionSteps": "Check the function call and remove the extra argument.",
     "command": null,
-    "youtubeCode": "pXW03f5tKKE",
+    "youtubeCode": "N5vscPTWKOk",
     "createdAt": 1773155555511
   },
   {
@@ -386,7 +386,7 @@
     "howToAvoid": "If you need to change data, use a List `[1, 2]` instead of a Tuple.",
     "solutionSteps": "1. Change your parentheses `()` around your data to `[]`.\n2. Now `.append()` will work.",
     "command": null,
-    "youtubeCode": "i0z_2hEDMIM",
+    "youtubeCode": "W8KRzm-HUcc",
     "createdAt": 1773155555517
   },
   {
@@ -396,7 +396,7 @@
     "howToAvoid": "Ensure the variable maintains its integer status.",
     "solutionSteps": "Did a function that modifies `count` forget to `return` the new value? By default functions return `None`.",
     "command": null,
-    "youtubeCode": "pXW03f5tKKE",
+    "youtubeCode": "HGOBQPFzWKo",
     "createdAt": 1773155555523
   },
   {
@@ -406,7 +406,7 @@
     "howToAvoid": "Convert numbers to strings before file writing.",
     "solutionSteps": "Use `file.write(str(number))`.",
     "command": null,
-    "youtubeCode": "pXW03f5tKKE",
+    "youtubeCode": "k9TUPpGqYTo",
     "createdAt": 1773155555529
   },
   {
@@ -416,7 +416,7 @@
     "howToAvoid": "Filter negative numbers before calculating square roots or logarithms.",
     "solutionSteps": "Add an `if val < 0:` branch before calling the math function.",
     "command": null,
-    "youtubeCode": "k9TUPpGqYTo",
+    "youtubeCode": "HGOBQPFzWKo",
     "createdAt": 1773155555534
   },
   {
@@ -426,7 +426,7 @@
     "howToAvoid": "Kill the old server before starting a new one.",
     "solutionSteps": "1. Find the terminal running the previous server and hit Ctrl+C.\n2. Or use your OS task manager to kill python.exe.",
     "command": null,
-    "youtubeCode": "uhvq8jEuQcw",
+    "youtubeCode": "N5vscPTWKOk",
     "createdAt": 1773155555541
   },
   {
@@ -436,7 +436,7 @@
     "howToAvoid": "Ensure you are feeding it valid JSON format.",
     "solutionSteps": "Print the string explicitly right before parsing it. It might be an HTML error page or empty text.",
     "command": null,
-    "youtubeCode": "uhvq8jEuQcw",
+    "youtubeCode": "tb8gHvYlCFs",
     "createdAt": 1773155555547
   },
   {
@@ -456,7 +456,7 @@
     "howToAvoid": "Don't use `/` for division if you need an integer; use `//` for floor division.",
     "solutionSteps": "Convert the float to an integer: `range(int(my_float))` or fix the division.",
     "command": null,
-    "youtubeCode": "pXW03f5tKKE",
+    "youtubeCode": "HGOBQPFzWKo",
     "createdAt": 1773155555559
   },
   {
@@ -466,7 +466,7 @@
     "howToAvoid": "Only use ints inside `[ ]` brackets.",
     "solutionSteps": "Change `my_string[\"a\"]` to `my_string.find(\"a\")` or use integers.",
     "command": null,
-    "youtubeCode": "W8KRzm-HUcc",
+    "youtubeCode": "k9TUPpGqYTo",
     "createdAt": 1773155555565
   },
   {
@@ -496,7 +496,7 @@
     "howToAvoid": "Only compare numbers to numbers, and words to words.",
     "solutionSteps": "Convert the string to int if it holds numeric text.",
     "command": null,
-    "youtubeCode": "pXW03f5tKKE",
+    "youtubeCode": "HGOBQPFzWKo",
     "createdAt": 1773155555582
   },
   {
@@ -506,7 +506,7 @@
     "howToAvoid": "Install OpenCV.",
     "solutionSteps": "`pip install opencv-python` in your terminal.",
     "command": "pip install opencv-python",
-    "youtubeCode": "1Ea0r5MrtkI",
+    "youtubeCode": "tb8gHvYlCFs",
     "createdAt": 1773155555588
   },
   {
@@ -516,7 +516,7 @@
     "howToAvoid": "Install Pandas.",
     "solutionSteps": "`pip install pandas` in your terminal.",
     "command": "pip install pandas",
-    "youtubeCode": "1Ea0r5MrtkI",
+    "youtubeCode": "tb8gHvYlCFs",
     "createdAt": 1773155555593
   },
   {
@@ -526,7 +526,7 @@
     "howToAvoid": "Install Numpy.",
     "solutionSteps": "`pip install numpy` in your terminal.",
     "command": "pip install numpy",
-    "youtubeCode": "1Ea0r5MrtkI",
+    "youtubeCode": "tb8gHvYlCFs",
     "createdAt": 1773155555599
   },
   {
@@ -536,7 +536,7 @@
     "howToAvoid": "Install Requests.",
     "solutionSteps": "`pip install requests` in your terminal.",
     "command": "pip install requests",
-    "youtubeCode": "1Ea0r5MrtkI",
+    "youtubeCode": "tb8gHvYlCFs",
     "createdAt": 1773155555605
   }
 ]
