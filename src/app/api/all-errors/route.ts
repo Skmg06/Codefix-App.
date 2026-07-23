@@ -1,7 +1,5 @@
 import { NextResponse } from 'next/server';
-import { PrismaClient } from '@prisma/client';
-
-const prisma = new PrismaClient();
+import { prisma } from '@/lib/prisma';
 
 export async function GET() {
     try {
@@ -16,8 +14,9 @@ export async function GET() {
         });
 
         return NextResponse.json(errors);
-    } catch (error) {
-        console.error("Database error:", error);
-        return NextResponse.json({ error: "Internal server error" }, { status: 500 });
+    } catch (error: any) {
+        console.error("Database error in all-errors:", error);
+        return NextResponse.json({ error: "Database error", message: error?.message || String(error) }, { status: 500 });
     }
 }
+

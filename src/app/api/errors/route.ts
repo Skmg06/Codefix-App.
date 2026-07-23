@@ -1,7 +1,5 @@
 import { NextResponse } from 'next/server';
-import { PrismaClient } from '@prisma/client';
-
-const prisma = new PrismaClient();
+import { prisma } from '@/lib/prisma';
 
 export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
@@ -48,8 +46,9 @@ export async function GET(request: Request) {
         } else {
             return NextResponse.json({ notFound: true, message: "We haven't seen this error yet. Double check your spelling or submit a request!" });
         }
-    } catch (error) {
-        console.error("Database error:", error);
-        return NextResponse.json({ error: "Internal server error" }, { status: 500 });
+    } catch (error: any) {
+        console.error("Database error in api/errors:", error);
+        return NextResponse.json({ error: "Internal server error", message: error?.message || String(error) }, { status: 500 });
     }
 }
+
