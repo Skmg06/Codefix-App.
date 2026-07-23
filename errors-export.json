@@ -266,7 +266,7 @@
     "howToAvoid": "If this happens unexpectedly, check if your script is hanging in an infinite loop, causing you to have to manually kill it.",
     "solutionSteps": "1. No code fix needed if it was intentional.\n2. If you were trapped in an infinite `while` loop, you need to change the loop condition so it eventually turns `False`.",
     "command": null,
-    "youtubeCode": null,
+    "youtubeCode": "k9TUPpGqYTo",
     "createdAt": 1773155555451
   },
   {
@@ -286,7 +286,7 @@
     "howToAvoid": "If you inherit from an abstract class or interface, you must write the code for all of its required methods.",
     "solutionSteps": "1. Go to the class you created.\n2. Make sure you define the method that the error is complaining about.",
     "command": null,
-    "youtubeCode": null,
+    "youtubeCode": "1Ea0r5MrtkI",
     "createdAt": 1773155555462
   },
   {
@@ -296,7 +296,7 @@
     "howToAvoid": "Never modify a collection directly while looping through it.",
     "solutionSteps": "1. Loop over a *copy* of the dictionary keys using `for key in list(my_dict.keys()):`.\n2. Then you can safely delete items from `my_dict` inside the loop.",
     "command": null,
-    "youtubeCode": null,
+    "youtubeCode": "daefaLgNkw0",
     "createdAt": 1773155555467
   },
   {
@@ -306,7 +306,7 @@
     "howToAvoid": "Build a new string entirely.",
     "solutionSteps": "1. Use slicing or string replacement.\n2. `new_str = 'H' + old_str[1:]`",
     "command": null,
-    "youtubeCode": null,
+    "youtubeCode": "pXW03f5tKKE",
     "createdAt": 1773155555472
   },
   {
@@ -316,7 +316,7 @@
     "howToAvoid": "Provide the input text when running the file, or wrap input in try/except.",
     "solutionSteps": "Wrap `input()` in a try/except block catching EOFError.",
     "command": null,
-    "youtubeCode": null,
+    "youtubeCode": "7jR_pXqP34U",
     "createdAt": 1773155555479
   },
   {
@@ -326,7 +326,7 @@
     "howToAvoid": "Use `for` loops which handle this automatically.",
     "solutionSteps": "If calling `next()`, provide a default value: `next(iterator, None)`.",
     "command": null,
-    "youtubeCode": null,
+    "youtubeCode": "1Ea0r5MrtkI",
     "createdAt": 1773155555484
   },
   {
@@ -336,7 +336,7 @@
     "howToAvoid": "Remember dictionaries use keys, not position numbers (unless the keys happen to be numbers).",
     "solutionSteps": "1. Use the actual string key name.\n2. Use `list(my_dict.values())[0]` if you must get the first chronological item.",
     "command": null,
-    "youtubeCode": null,
+    "youtubeCode": "daefaLgNkw0",
     "createdAt": 1773155555488
   },
   {
@@ -346,7 +346,7 @@
     "howToAvoid": "Ensure the number of variables exactly matches the length of the list.",
     "solutionSteps": "Count variables on left. Count items on right. Make them match. OR use `*` operator: `a, *rest = [1, 2, 3]`.",
     "command": null,
-    "youtubeCode": null,
+    "youtubeCode": "k9TUPpGqYTo",
     "createdAt": 1773155555494
   },
   {
@@ -356,7 +356,7 @@
     "howToAvoid": "Check the size of returned tuples from functions.",
     "solutionSteps": "Make sure you aren't expecting 3 variables when the list only gives you 2.",
     "command": null,
-    "youtubeCode": null,
+    "youtubeCode": "k9TUPpGqYTo",
     "createdAt": 1773155555499
   },
   {
@@ -366,7 +366,7 @@
     "howToAvoid": "Look at the `def function_name(arg1, arg2):` definition to see what it requires.",
     "solutionSteps": "1. Look at the function signature.\n2. Pass in the missing argument inside the parentheses when you call it.",
     "command": null,
-    "youtubeCode": null,
+    "youtubeCode": "pXW03f5tKKE",
     "createdAt": 1773155555505
   },
   {
@@ -376,7 +376,7 @@
     "howToAvoid": "Update the function definition to accept more arguments, or pass fewer.",
     "solutionSteps": "Check the function call and remove the extra argument.",
     "command": null,
-    "youtubeCode": null,
+    "youtubeCode": "pXW03f5tKKE",
     "createdAt": 1773155555511
   },
   {
@@ -386,7 +386,7 @@
     "howToAvoid": "If you need to change data, use a List `[1, 2]` instead of a Tuple.",
     "solutionSteps": "1. Change your parentheses `()` around your data to `[]`.\n2. Now `.append()` will work.",
     "command": null,
-    "youtubeCode": null,
+    "youtubeCode": "i0z_2hEDMIM",
     "createdAt": 1773155555517
   },
   {
@@ -396,7 +396,7 @@
     "howToAvoid": "Ensure the variable maintains its integer status.",
     "solutionSteps": "Did a function that modifies `count` forget to `return` the new value? By default functions return `None`.",
     "command": null,
-    "youtubeCode": null,
+    "youtubeCode": "pXW03f5tKKE",
     "createdAt": 1773155555523
   },
   {
@@ -406,7 +406,7 @@
     "howToAvoid": "Convert numbers to strings before file writing.",
     "solutionSteps": "Use `file.write(str(number))`.",
     "command": null,
-    "youtubeCode": null,
+    "youtubeCode": "pXW03f5tKKE",
     "createdAt": 1773155555529
   },
   {
@@ -416,7 +416,7 @@
     "howToAvoid": "Filter negative numbers before calculating square roots or logarithms.",
     "solutionSteps": "Add an `if val < 0:` branch before calling the math function.",
     "command": null,
-    "youtubeCode": null,
+    "youtubeCode": "k9TUPpGqYTo",
     "createdAt": 1773155555534
   },
   {
@@ -426,7 +426,7 @@
     "howToAvoid": "Kill the old server before starting a new one.",
     "solutionSteps": "1. Find the terminal running the previous server and hit Ctrl+C.\n2. Or use your OS task manager to kill python.exe.",
     "command": null,
-    "youtubeCode": null,
+    "youtubeCode": "uhvq8jEuQcw",
     "createdAt": 1773155555541
   },
   {
@@ -436,7 +436,7 @@
     "howToAvoid": "Ensure you are feeding it valid JSON format.",
     "solutionSteps": "Print the string explicitly right before parsing it. It might be an HTML error page or empty text.",
     "command": null,
-    "youtubeCode": null,
+    "youtubeCode": "uhvq8jEuQcw",
     "createdAt": 1773155555547
   },
   {
@@ -446,7 +446,7 @@
     "howToAvoid": "Always close your quotes.",
     "solutionSteps": "Look at the end of the line. Add the missing `'` or `\"`.",
     "command": null,
-    "youtubeCode": null,
+    "youtubeCode": "k9TUPpGqYTo",
     "createdAt": 1773155555553
   },
   {
@@ -456,7 +456,7 @@
     "howToAvoid": "Don't use `/` for division if you need an integer; use `//` for floor division.",
     "solutionSteps": "Convert the float to an integer: `range(int(my_float))` or fix the division.",
     "command": null,
-    "youtubeCode": null,
+    "youtubeCode": "pXW03f5tKKE",
     "createdAt": 1773155555559
   },
   {
@@ -466,7 +466,7 @@
     "howToAvoid": "Only use ints inside `[ ]` brackets.",
     "solutionSteps": "Change `my_string[\"a\"]` to `my_string.find(\"a\")` or use integers.",
     "command": null,
-    "youtubeCode": null,
+    "youtubeCode": "W8KRzm-HUcc",
     "createdAt": 1773155555565
   },
   {
@@ -476,7 +476,7 @@
     "howToAvoid": "Check if the item exists first.",
     "solutionSteps": "Wrap it with: `if 'apple' in my_list: my_list.remove('apple')`.",
     "command": null,
-    "youtubeCode": null,
+    "youtubeCode": "W8KRzm-HUcc",
     "createdAt": 1773155555571
   },
   {
@@ -486,7 +486,7 @@
     "howToAvoid": "Dictionaries only use `[]` or `.get()`.",
     "solutionSteps": "Change `my_dict('key')` to `my_dict['key']`.",
     "command": null,
-    "youtubeCode": null,
+    "youtubeCode": "daefaLgNkw0",
     "createdAt": 1773155555576
   },
   {
@@ -496,7 +496,7 @@
     "howToAvoid": "Only compare numbers to numbers, and words to words.",
     "solutionSteps": "Convert the string to int if it holds numeric text.",
     "command": null,
-    "youtubeCode": null,
+    "youtubeCode": "pXW03f5tKKE",
     "createdAt": 1773155555582
   },
   {
@@ -506,7 +506,7 @@
     "howToAvoid": "Install OpenCV.",
     "solutionSteps": "`pip install opencv-python` in your terminal.",
     "command": "pip install opencv-python",
-    "youtubeCode": null,
+    "youtubeCode": "1Ea0r5MrtkI",
     "createdAt": 1773155555588
   },
   {
@@ -516,7 +516,7 @@
     "howToAvoid": "Install Pandas.",
     "solutionSteps": "`pip install pandas` in your terminal.",
     "command": "pip install pandas",
-    "youtubeCode": null,
+    "youtubeCode": "1Ea0r5MrtkI",
     "createdAt": 1773155555593
   },
   {
@@ -526,7 +526,7 @@
     "howToAvoid": "Install Numpy.",
     "solutionSteps": "`pip install numpy` in your terminal.",
     "command": "pip install numpy",
-    "youtubeCode": null,
+    "youtubeCode": "1Ea0r5MrtkI",
     "createdAt": 1773155555599
   },
   {
@@ -536,7 +536,7 @@
     "howToAvoid": "Install Requests.",
     "solutionSteps": "`pip install requests` in your terminal.",
     "command": "pip install requests",
-    "youtubeCode": null,
+    "youtubeCode": "1Ea0r5MrtkI",
     "createdAt": 1773155555605
   }
 ]
