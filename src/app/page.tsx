@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useSearchParams, useRouter } from 'next/navigation';
 import { QRCodeCanvas } from 'qrcode.react';
 
@@ -13,7 +13,7 @@ interface CodeFixError {
   youtubeCode: string | null;
 }
 
-export default function Home() {
+function HomeContent() {
   const [query, setQuery] = useState("");
   const [result, setResult] = useState<CodeFixError | null>(null);
   const [loading, setLoading] = useState(false);
@@ -99,9 +99,9 @@ export default function Home() {
 
       {errorNotFound && !loading && (
         <div className="solution-card text-center">
-          <h2 className="card-title" style={{ justifyContent: "center" }}>🤔 Hmm... That's a new one!</h2>
-          <p>We couldn't find an exact match for <b>"{query}"</b>.</p>
-          <p className="mt-4">Try searching for the core error (like "SyntaxError" or "NameError") or ask your lab teacher!</p>
+          <h2 className="card-title" style={{ justifyContent: "center" }}>🤔 Hmm... That&apos;s a new one!</h2>
+          <p>We couldn&apos;t find an exact match for <b>&quot;{query}&quot;</b>.</p>
+          <p className="mt-4">Try searching for the core error (like &quot;SyntaxError&quot; or &quot;NameError&quot;) or ask your lab teacher!</p>
         </div>
       )}
 
@@ -173,5 +173,13 @@ export default function Home() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={<div className="loader"></div>}>
+      <HomeContent />
+    </Suspense>
   );
 }

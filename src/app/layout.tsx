@@ -32,11 +32,6 @@ export default function RootLayout({
           <nav className="navbar">
             <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
               <a href="/" className="nav-logo">CODEFIX</a>
-              <img
-                src="/dypatil-logo.png"
-                alt="DY Patil Logo"
-                style={{ height: '50px', objectFit: 'contain' }}
-              />
             </div>
             <div className="nav-links">
               <a href="/" className="nav-btn">Home</a>
@@ -53,19 +48,6 @@ export default function RootLayout({
           <div className="emoji-float emoji-4">🐛</div>
 
           {children}
-        </div>
-
-        <div className="dev-credit-panel">
-          <div className="credit-title">MADE BY</div>
-          <div className="credit-name">SATWIK GOSWAMI</div>
-          <div className="credit-name">NARESH GUJRATI</div>
-          <div className="credit-name">VEDANT GAWADE</div>
-          <div className="credit-name">SUJAY MHATRE</div>
-
-          <div className="credit-spacer"></div>
-
-          <div className="credit-title">GUIDED BY</div>
-          <div className="credit-name">DR. UTTAM WAGHMODE</div>
         </div>
       </body>
     </html>
